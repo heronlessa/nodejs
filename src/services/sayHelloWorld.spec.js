@@ -8,8 +8,8 @@ describe('Say Hello tests', () => {
     });
 
     it('Should say Hello Germano', () => {
-        const response = sayHelloWorld.sayHello('Germano');
+        const response = sayHelloWorld.sayHello('Heron');
 
-        expect(response).toBe('Hello Germano!');
+        expect(response).toBe('Hello Heron!');
     })
 });
