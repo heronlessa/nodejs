@@ -1,9 +1,9 @@
 FROM node:16-slim as BUILDER 
-LABEL maintainer="Bruno Germano"
+LABEL maintainer="Heron"
 
 WORKDIR /usr/src/app
 
-# Install app dependencies
+# instalar dependências
 COPY package*.json ./
 RUN npm install
 
