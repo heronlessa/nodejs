@@ -30,6 +30,6 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Run Discord Webhook
-      uses: mrrobotdotapp/classic-discord-webhook@main
+      uses: actions/checkout@v4
       with:
         webhook_url: ${{ secrets.DISCORD_WEBHOOK}}
