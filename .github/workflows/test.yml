@@ -30,6 +30,6 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Run Discord Webhook
-      uses: ehsanfox/discord.js-webhook
+      uses: rjstone/discord-webhook-notify@v1
       with:
         webhook_url: ${{ secrets.DISCORD_WEBHOOK}}
