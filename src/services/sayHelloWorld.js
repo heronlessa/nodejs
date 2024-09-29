@@ -1,3 +1,3 @@
-exports.sayHello = (name='Heron') => {
+exports.sayHello = (name='') => {
     return `Hello ${name ? name : 'World'}!`
 }
