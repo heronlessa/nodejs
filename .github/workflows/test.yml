@@ -22,13 +22,14 @@ jobs:
     - run: npm ci
     - run: npm run test
 
-  Discord:
+    name: Discord Webhook
+  git:
     runs-on: ubuntu-latest
     steps:
 
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v2
 
-    - name: Discord Notification
-        uses: tenzin1308/discord-notification@v1.0.0
-        with:
+    - name: Run Discord Webhook
+      uses: johnnyhuy/actions-discord-git-webhook@main 
+      with:
         webhook_url: ${{ secrets.DISCORD_WEBHOOK}}
